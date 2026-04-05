@@ -4,6 +4,11 @@
 # CRISPR/Cas9 Epigenetic KO in Arabidopsis thaliana
 # SetA: PRDM9 KO vs Control | SetE: SDG2 KO vs Control
 # ================================================================
+library(usethis)
+create_github_token()
+gitcreds::gitcreds_set()
+
+use_github()
 
 library(DESeq2)       # Negative Binomial DE model
 library(edgeR)        # CPM normalisation + TMM scaling
